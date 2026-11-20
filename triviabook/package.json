@@ -1,0 +1,22 @@
+{
+  "name": "triviabook",
+  "version": "1.0.0",
+  "description": "Triviabook API with Node, Express, and Postgres",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "db:setup": "node db/setup.js",
+    "db:seed": "node db/seed.js",
+    "db:reset": "node db/setup.js && node db/seed.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
